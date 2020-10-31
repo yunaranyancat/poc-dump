@@ -1,0 +1,22 @@
+# Vulnerability discovery:
+
+Registry value : HKLM\SYSTEM\ControlSet001\Services\Quick 'n Easy FTP Service
+
+# Service info:
+ 
+C:\>sc qc "Quick 'n Easy FTP Service"
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: Quick 'n Easy FTP Service
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1 Normal
+        BINARY_PATH_NAME   : C:\Program Files (x86)\Quick 'n Easy FTP Service\ftpservice.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : Quick 'n Easy FTP Service
+        DEPENDENCIES       :
+        SERVICE_START_NAME : LocalSystem
+ 
+# Exploit:
+This vulnerability could permit executing code during startup or reboot with the escalated privileges.
