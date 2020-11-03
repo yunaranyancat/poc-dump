@@ -1,0 +1,16 @@
+C:\>sc qc HealthMonitor
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: HealthMonitor
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1 Normal
+        BINARY_PATH_NAME   : C:\Program Files (x86)\HealthMonitor\HealthMonitor.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : HealthMonitor
+        DEPENDENCIES       : winmgmt
+         : SysmonLog
+        SERVICE_START_NAME : LocalSystem
+ 
+ Just rename your malicious payload to Program.exe and put it in C:\ . Upon reboot/restart, your will get a reverse shell (maybe NT AUTHORITY shell). 
