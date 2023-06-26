@@ -26,7 +26,7 @@ CloudPanel v2.0.0 - v2.3.0
 
 08-06-2023 – Privately disclose to vendor
 
-09-05-2023 – Submitted to CVE assignee
+09-06-2023 – Submitted to CVE assignee
 
 10-06-2023 - Patch released by vendor
 
