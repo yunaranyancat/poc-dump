@@ -21,6 +21,9 @@ Ensure proper access control is enforced when uploading file to the server.
 ## AFFECTED VERSION
 CloudPanel v2.0.0 - v2.3.0
 
+## FIXED VERSION
+CloudPanel v2.3.1 - https://www.cloudpanel.io/docs/v2/changelog/
+
 ## TIMELINE
 07-06-2023 – Exploit Found
 
