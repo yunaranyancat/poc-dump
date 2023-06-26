@@ -1,3 +1,5 @@
+## CVE-2023-36630 Writeup
+
 Attack details :
 ![1](https://github.com/yunaranyancat/poc-dump/blob/main/cloudpanel/1.png)
 
@@ -15,3 +17,19 @@ Since the application requires ssh service, the ssh will be installed into the s
 
 Recommendations :
 Ensure proper access control is enforced when uploading file to the server.
+
+## AFFECTED VERSION
+CloudPanel v2.0.0 - v2.3.0
+
+## TIMELINE
+07-06-2023 – Exploit Found
+
+08-06-2023 – Privately disclose to vendor
+
+09-05-2023 – Submitted to CVE assignee
+
+10-06-2023 - Patch released by vendor
+
+25-06-2023 – CVE number assigned by MITRE
+
+26-06-2023 – Exploit released to the public
